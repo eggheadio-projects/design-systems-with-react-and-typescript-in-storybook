@@ -5,6 +5,9 @@
   "repository": "git@github.com:eggheadio-projects/design-systems-with-react-and-typescript-in-storybook.git",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "storybook": "aux() { cd $(ls -d lessons/*\"$1\"*) && yarn storybook; }; aux"
+  },
   "devDependencies": {
     "@storybook/addon-info": "^4.1.11",
     "@storybook/addon-knobs": "^4.1.11",
