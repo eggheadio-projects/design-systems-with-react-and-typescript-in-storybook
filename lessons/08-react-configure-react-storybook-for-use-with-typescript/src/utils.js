@@ -1,4 +1,5 @@
 import { withInfo } from '@storybook/addon-info';
+
 const wInfoStyle = {
   header: {
     h1: {

@@ -1,4 +1,7 @@
+import { addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+addDecorator(withInfo)
+
 const wInfoStyle = {
   header: {
     h1: {
@@ -22,4 +25,4 @@ const wInfoStyle = {
   },
 };
 export const wInfo = text =>
-  withInfo({ inline: true, source: false, styles: wInfoStyle, text: text });
+withInfo({ inline: true, source: false, styles: wInfoStyle, text: text });

@@ -1,4 +1,9 @@
+import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+
+storiesOf('Component', module)
+  .addDecorator(withInfo)
+
 const wInfoStyle = {
   header: {
     h1: {
@@ -21,5 +26,8 @@ const wInfoStyle = {
     lineHeight: '2',
   },
 };
+
 export const wInfo = text =>
   withInfo({ inline: true, source: false, styles: wInfoStyle, text: text });
+
+  

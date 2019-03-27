@@ -1,0 +1,40 @@
+{
+    "slug": "design-systems-with-react-and-typescript-in-storybook",
+    "dependencies": {
+        "@storybook/addon-info": "^5.0.3",
+        "@storybook/addon-knobs": "^5.0.3",
+        "@storybook/addons": "^5.0.3",
+        "@storybook/react": "^5.0.3",
+        "@types/react": "^16.8.8",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-core": "^6.26.3",
+        "react-docgen-typescript-webpack-plugin": "^1.1.0",
+        "storybook-addon-jsx": "^7.0.2",
+        "typescript": "^3.3.4",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
+    },
+    "reviews": [
+        {
+            "performedOn": "2019-03-26",
+            "performedBy": "Sam Grinis",
+            "scopeOfReview": "full course lesson review",
+            "notes": [
+                {
+                    "type": "major issue",
+                    "title": "withInfo deprecated",
+                    "details": "Error message: Passing stories directly into withInfo() is deprecated, instead use addDecorator(withInfo) and pass options with the 'info' parameter ",
+                    "lessons": "06-09",
+                    "dependency": "@storybook/addon-info"
+                }
+            ]
+        }
+    ]
+}
+}
+
+
+
+Tried reformatting to addDecorator in global config, as well as directed locally to individual stories. Link to migration guide: https: //github.com/storybooks/storybook/tree/5.0.0/addons/info
+Nothing worked. Need instructor or heavier guns in on this one. If this issue is fixed, lessons 6-9 should work properly with updated dependencies. 
+Lessons 1-5 worked just fine. 

@@ -1,9 +1,0 @@
-{
-  "name": "05-react-apply-style-to-a-react-storybook-with-the-info-addon-to-turn-stories-into-documentation",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "storybook": "start-storybook -p 6006 -c .storybook"
-  }
-}

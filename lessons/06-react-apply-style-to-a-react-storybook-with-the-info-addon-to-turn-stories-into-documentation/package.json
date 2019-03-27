@@ -1,12 +1,10 @@
 {
-  "name": "egghead-storybook",
+  "name": "05-react-apply-style-to-a-react-storybook-with-the-info-addon-to-turn-stories-into-documentation",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:eggheadio-projects/design-systems-with-react-and-typescript-in-storybook.git",
   "license": "MIT",
-  "private": true,
   "scripts": {
-    "storybook": "aux() { cd $(ls -d lessons/*\"$1\"*) && yarn storybook; }; aux"
+    "storybook": "start-storybook -p 6006 -c .storybook"
   },
   "devDependencies": {
     "@storybook/addon-info": "^5.0.3",
@@ -23,8 +21,5 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
-  },
-  "workspaces": [
-    "lessons/*"
-  ]
+  }
 }
